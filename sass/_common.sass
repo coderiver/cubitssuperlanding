@@ -47,15 +47,29 @@
 // p
 // 	+jpg(bla)
 
-
++font(reg, Helvetica-Regular) 
++font(bold, helveticaneuecyr-bold-webfont) 
++font(med, helveticaneuecyr-medium-webfont) 
+=reg
+	font-family: reg, Arial, sans-serif 
+=bold
+	font-family: bold, Arial, sans-serif 
+=med
+	font-family: med, Arial, sans-serif 
 body
-	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-
+	+reg
+	min-width: 1200px 
+h1
+	font-weight: normal
+	+bold
+%in
+	width: 1200px 
+	margin: 0 auto
+	position: relative 
 
 // common blocks      
-
 
 
 
