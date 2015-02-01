@@ -170,17 +170,43 @@
 		font-weight: normal
 		+reg
 		margin-bottom: 35px 
-@each $s in protect,chargeback,global,360
+	.features__note
+		font-size: 13px 
+		color: #7F7F7F
+		margin: 10px  0 39px 0
+		text-align: center
+	.features__start
+		width: 240px
+		height: 50px
+		line-height: 50px
+		text-align: center
+		display: inline-block 
+		background-color: #EC294B
+		@include border-radius(5px)
+		color: #FFF
+		font-size: 15px
+		+bold
+		text-transform: uppercase
+		cursor: pointer
+		text-decoration: none
+		position: relative
+		z-index: 100 
+	.features__startwrap
+		text-align: center
+		position: relative
+		z-index: 100 
+		top: -25px 
+@each $s in protect,chargeback,global,360,funds, fees
 	.icon-#{$s}
 		+s(i-#{$s})
 		display: inline-block
 .customers
-	padding: 35px 0 37px
+	padding: 35px 0 37px 
 	font-size: 0 
 	border-bottom: 1px solid #E6EEF2 
 	h3
 		display: inline-block
-		width: 20% 
+		width: 240px 
 		vertical-align: middle
 		font-weight: normal
 		+bold
@@ -197,7 +223,7 @@
 		img
 			display: inline-block
 			vertical-align: middle
-			margin-left: 70px 
+			margin-right: 50px 
 
 .scr
 	background: #EEF5F7
@@ -323,8 +349,8 @@
 	.in
 		+clr
 	.newslist
-		float: right
-		width: 80%
+		float: left
+		margin-left: 240px 
 	h3
 		position: absolute
 		left: 0
@@ -352,7 +378,7 @@
 		font-size: 13px 
 		float: left
 		width: 240px - 25px
-		padding-left: 25px 
+		padding-right: 25px 
 		.newsitem__date
 			font-size: 13px 
 			color: #CACACA 
@@ -413,7 +439,150 @@
 
 
 
+.compare
+	.compare__head
+		background: #EEF5F7
+		height: 100px  
+		.in
+			position: relative
+			width: 830px 
+		h2
+			width: 200px 
+			text-align: center
+			top: 21px 
+			left: 50%
+			margin-left: -100px  
+			position: absolute
+			color: #353557 
+		.compare__left
+			position: absolute
+			left: 0
+			height: 100px 
+			line-height: 100px 
+			width: 300px  
+			font-size: 18px 
+			color: #68768A
+			letter-spacing: 3px  
+			font-weight: normal
+			text-transform: uppercase
+			position: relative
+			left: 30px  
+			+bold
+			i
+				+s(card)
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px 
+				position: relative
+				top: -4px 
+		.compare__right
+			width: 300px 
+			text-align: center
+			position: absolute
+			right: 0
+			top: 32px 
+			.icons-cubits
+				display: inline-block
+				+s(logo1)
+	.compare__row
+		border-bottom: 1px solid #E6EEF2 
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 50%
+			background: #F6FAFB
+			content: ' '    
+			height: 160px 
+			
+		.compare__rowin
+			width: 830px 
+			height: 160px
+			position: relative 
+			margin: 0 auto
+			position: relative 
+			z-index: 5 
+			.compare__left
+				float: left
+				width: 300px 
+				text-align: center
+				background: #F6FAFB 
+				height: 160px 
+				
+				&:before
+					content: ''
+					display: inline-block
+					height: 100%
+					vertical-align: middle
+					margin-right: -0.25em
+				.compare__in
+					display: inline-block
+					vertical-align: middle
+					width: 99% 
+				h3
+					font-size: 20px 
+					font-weight: normal
+					margin-bottom: 10px 
+					+med
+					color: #353557
+				p
+					font-size: 13px 
+					color: #585858 
+					line-height: 20px 
+			.compare__right
+				float: right
+				width: 300px 
+				text-align: center
+				height: 160px 
+				&:before
+					content: ''
+					display: inline-block
+					height: 100%
+					vertical-align: middle
+					margin-right: -0.25em
+				.compare__in
+					display: inline-block
+					vertical-align: middle
+					width: 99% 
+				h3
+					font-weight: normal
+					+bold
+					letter-spacing: 2px 
+					color: #1EBBB8 
+					margin-bottom: 10px 
+					text-transform: uppercase
+					font-size: 20px 
+				p
+					font-size: 13px 
+					color: #585858 
+					line-height: 20px 
+	.compare__icon
+		position: absolute
+		left: 50%
+		width: 160px   
+		text-align: center
+		margin-left: -80px 
+		top: 33px 
+		+bold
+		font-size: 15px 
+		line-height: 1 
+		.compare__iconwrap
+			width: 48px 
+			height: 48px 
+			background: #fff 
+			border-radius: 48px
+			display: inline-block
+			margin-bottom: 5px 
+			i
+				position: relative
+				top: 7px 
+				&.icon-funds
+					top: 12px 
+				&.icon-chargeback
+					top: 8px 
 
+			
 
 
 
