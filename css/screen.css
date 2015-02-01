@@ -37,19 +37,46 @@ h1 { font-weight: normal; font-family: bold, Arial, sans-serif; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.scr h2, .api h2, .news h3 { font-size: 25px; font-weight: normal; font-family: bold, Arial, sans-serif; text-align: center; line-height: 1; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 30px; }
+.odds h2, .features h2, .features .feature .feature__text h3, .scr h2, .api h2, .news h3 { font-size: 25px; font-weight: normal; font-family: bold, Arial, sans-serif; text-align: center; line-height: 1; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 30px; }
 
 .home { background: black; position: relative; }
-.home h1 { position: absolute; top: 40px; left: 0; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s32aae5cf28.png') 0 0 no-repeat; width: 194px; height: 40px; }
+.home h1 { position: absolute; top: 40px; left: 0; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s526d2c757c.png') 0 0 no-repeat; width: 194px; height: 40px; }
 .home:before { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/home.jpg) no-repeat 50% 50%; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; opacity: 0.5; content: " "; z-index: 1; }
 .home .in { height: 100vh; min-height: 600px; z-index: 2; }
 .home .nav { position: absolute; top: 35px; right: 0; list-style: none; text-align: right; }
 .home .nav li { display: inline-block; vertical-align: top; }
 .home .nav a { display: inline-block; height: 50px; line-height: 50px; font-size: 15px; color: white; text-transform: uppercase; text-decoration: none; padding: 0 20px; letter-spacing: 1.5px; }
 .home .nav a.nav__signup { padding: 0 24px; box-shadow: inset 0 0 0 2px #e92c4f; border-radius: 4px; font-family: bold, Arial, sans-serif; margin-left: 40px; }
-.home .home__next { position: absolute; left: 50%; margin-left: -15px; bottom: 30px; background: url('../img/icons-s32aae5cf28.png') 0 -90px no-repeat; width: 30px; height: 30px; cursor: pointer; }
+.home .home__next { position: absolute; left: 50%; margin-left: -15px; bottom: 30px; background: url('../img/icons-s526d2c757c.png') 0 -265px no-repeat; width: 30px; height: 30px; cursor: pointer; }
 .home .home__center { position: absolute; width: 100%; left: 0; text-align: center; top: 50%; margin-top: -120px; font-size: 18px; color: white; line-height: 1.6; }
 .home .home__center h2 { font-size: 60px; color: #f7d060; text-transform: uppercase; font-weight: normal; font-family: bold, Arial, sans-serif; margin-bottom: 30px; letter-spacing: 5px; line-height: 1; }
+
+.features h2 { text-align: center; }
+.features .feature { *zoom: 1; width: 100%; position: relative; }
+.features .feature:after { content: " "; display: table; clear: both; }
+.features .feature.first { box-shadow: inset 0 1px 0 #e6eef2; }
+.features .feature.last { box-shadow: inset 0 -1px 0 #e6eef2; margin-bottom: 70px; }
+.features .feature.is-left .feature__text { float: left; }
+.features .feature.is-left .feature__img { float: right; }
+.features .feature.is-left .feature__text .feature__textin { width: 400px; padding-right: 70px; float: right; }
+.features .feature .feature__text { float: right; width: 50%; min-height: 450px; text-align: left; }
+.features .feature .feature__text .feature__textin { padding-top: 78px; float: left; width: 430px; padding-left: 70px; }
+.features .feature .feature__text h3 { font-size: 30px; color: #353557; margin-bottom: 27px; text-align: left; line-height: 35px; }
+.features .feature .feature__text p { font-size: 18px; line-height: 30px; color: #a3a3a3; text-align: left; }
+.features .feature .feature__img { float: left; width: 50%; min-height: 450px; }
+.features .feature .feature__icon { position: absolute; top: 50%; left: 50%; margin-top: -24px; margin-left: -24px; background: white; border-radius: 48px; width: 48px; height: 48px; background: white; text-align: center; }
+.features .feature .feature__icon i { position: relative; top: 7px; }
+.features .feature .feature__icon i.icon-360 { top: 5px; }
+.features .feature .feature__icon i.icon-chargeback { top: 8px; }
+.features h4 { font-size: 18px; color: #353557; text-align: center; font-weight: normal; font-family: reg, Arial, sans-serif; margin-bottom: 35px; }
+
+.icon-protect { background: url('../img/icons-s526d2c757c.png') 0 -180px no-repeat; width: 27px; height: 35px; display: inline-block; }
+
+.icon-chargeback { background: url('../img/icons-s526d2c757c.png') 0 -138px no-repeat; width: 32px; height: 32px; display: inline-block; }
+
+.icon-global { background: url('../img/icons-s526d2c757c.png') 0 -50px no-repeat; width: 33px; height: 33px; display: inline-block; }
+
+.icon-360 { background: url('../img/icons-s526d2c757c.png') 0 -93px no-repeat; width: 32px; height: 35px; display: inline-block; }
 
 .customers { padding: 35px 0 37px; font-size: 0; border-bottom: 1px solid #e6eef2; }
 .customers h3 { display: inline-block; width: 20%; vertical-align: middle; font-weight: normal; font-family: bold, Arial, sans-serif; font-size: 15px; color: #d4d5d6; text-transform: uppercase; line-height: 1.1; letter-spacing: 2px; }
@@ -75,7 +102,7 @@ h1 { font-weight: normal; font-family: bold, Arial, sans-serif; }
 .scr .scr__img .scr__tip.right.tip5 i { left: -90px; width: 80px; }
 .scr .scr__img .scr__tip.right.tip6 { top: 351px; width: 190px; }
 .scr .scr__img .scr__tip.right.tip6 i { width: 90px; left: -85px; }
-.scr .scr__next { background: url('../img/icons-s32aae5cf28.png') 0 -50px no-repeat; width: 30px; height: 30px; cursor: pointer; display: inline-block; }
+.scr .scr__next { background: url('../img/icons-s526d2c757c.png') 0 -225px no-repeat; width: 30px; height: 30px; cursor: pointer; display: inline-block; }
 .scr .scr__note { font-size: 13px; color: #bdc2c4; text-align: center; margin-bottom: 37px; }
 
 .api { background: #333455; padding: 54px 0 38px 0; position: relative; }
@@ -91,8 +118,8 @@ h1 { font-weight: normal; font-family: bold, Arial, sans-serif; }
 .news .newslist { float: right; width: 80%; }
 .news h3 { position: absolute; left: 0; top: 0; font-size: 20px; color: #353557; text-align: left; line-height: 1.1; }
 .news .news__controls { position: absolute; left: 0; width: 20%; top: 67px; }
-.news .news__controls .news__next { background: url('../img/icons-s32aae5cf28.png') 0 -185px no-repeat; width: 11px; height: 19px; display: inline-block; cursor: pointer; }
-.news .news__controls .news__prev { background: url('../img/icons-s32aae5cf28.png') 0 -156px no-repeat; width: 11px; height: 19px; margin-right: 15px; display: inline-block; cursor: pointer; }
+.news .news__controls .news__next { background: url('../img/icons-s526d2c757c.png') 0 -360px no-repeat; width: 11px; height: 19px; display: inline-block; cursor: pointer; }
+.news .news__controls .news__prev { background: url('../img/icons-s526d2c757c.png') 0 -331px no-repeat; width: 11px; height: 19px; margin-right: 15px; display: inline-block; cursor: pointer; }
 .news .newsitem { font-size: 13px; float: left; width: 215px; padding-left: 25px; }
 .news .newsitem .newsitem__date { font-size: 13px; color: #cacaca; margin-bottom: 13px; }
 .news .newsitem h4 { font-weight: normal; font-family: med, Arial, sans-serif; color: #272729; font-size: 15px; margin-bottom: 12px; }
@@ -108,6 +135,6 @@ h1 { font-weight: normal; font-family: bold, Arial, sans-serif; }
 
 .socials { float: right; text-align: right; width: 20%; }
 .socials a { display: inline-block; vertical-align: middle; margin-left: 18px; font: 0/0 a; text-shadow: none; color: transparent; }
-.socials a.socials__fb { background: url('../img/icons-s32aae5cf28.png') 0 -253px no-repeat; width: 9px; height: 17px; }
-.socials a.socials__tw { background: url('../img/icons-s32aae5cf28.png') 0 -214px no-repeat; width: 17px; height: 14px; }
-.socials a.socials__gp { background: url('../img/icons-s32aae5cf28.png') 0 -130px no-repeat; width: 17px; height: 16px; }
+.socials a.socials__fb { background: url('../img/icons-s526d2c757c.png') 0 -428px no-repeat; width: 9px; height: 17px; }
+.socials a.socials__tw { background: url('../img/icons-s526d2c757c.png') 0 -389px no-repeat; width: 17px; height: 14px; }
+.socials a.socials__gp { background: url('../img/icons-s526d2c757c.png') 0 -305px no-repeat; width: 17px; height: 16px; }
