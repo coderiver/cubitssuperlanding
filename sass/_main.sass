@@ -89,8 +89,44 @@
 			line-height: 1 
 
 .odds
+	text-align: center
+	.odds__next
+		+s(nextb)
+		cursor: pointer
+		display: inline-block
+		margin-bottom: 34px 
 	h2
 		@extend %h2
+		font-size: 25px 
+		line-height: 30px
+		color: #353557 
+		margin: 47px auto 
+	.odds__time
+		background: #EEF5F7
+		margin-bottom: 47px 
+		.in
+			+clr
+		.odds__point
+			float: left
+			width: 240px 
+			padding: 21px 0 25px 0
+			font-size: 13px  
+			line-height: 18px
+			color: #585858 
+			position: relative
+			text-align: left
+			&:before
+				position: absolute
+				left: 20px 
+				content: ' '
+				border-right: 1px solid #E6EEF2 
+				height: 128px 
+				bottom: 100% 
+			strong
+				font-weight: normal
+				+med
+				font-size: 15px 
+				color: #1FBFBC 
 
 .features
 	h2

@@ -51,6 +51,16 @@ h1 { font-weight: normal; font-family: bold, Arial, sans-serif; }
 .home .home__center { position: absolute; width: 100%; left: 0; text-align: center; top: 50%; margin-top: -120px; font-size: 18px; color: white; line-height: 1.6; }
 .home .home__center h2 { font-size: 60px; color: #f7d060; text-transform: uppercase; font-weight: normal; font-family: bold, Arial, sans-serif; margin-bottom: 30px; letter-spacing: 5px; line-height: 1; }
 
+.odds { text-align: center; }
+.odds .odds__next { background: url('../img/icons-s84a21f296f.png') 0 -312px no-repeat; width: 30px; height: 30px; cursor: pointer; display: inline-block; margin-bottom: 34px; }
+.odds h2 { font-size: 25px; line-height: 30px; color: #353557; margin: 47px auto; }
+.odds .odds__time { background: #eef5f7; margin-bottom: 47px; }
+.odds .odds__time .in { *zoom: 1; }
+.odds .odds__time .in:after { content: " "; display: table; clear: both; }
+.odds .odds__time .odds__point { float: left; width: 240px; padding: 21px 0 25px 0; font-size: 13px; line-height: 18px; color: #585858; position: relative; text-align: left; }
+.odds .odds__time .odds__point:before { position: absolute; left: 20px; content: " "; border-right: 1px solid #e6eef2; height: 128px; bottom: 100%; }
+.odds .odds__time .odds__point strong { font-weight: normal; font-family: med, Arial, sans-serif; font-size: 15px; color: #1fbfbc; }
+
 .features h2 { text-align: center; }
 .features .feature { *zoom: 1; width: 100%; position: relative; }
 .features .feature:after { content: " "; display: table; clear: both; }
