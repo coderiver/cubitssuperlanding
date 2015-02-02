@@ -20,7 +20,7 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: reg; src: url("fonts/Helvetica-Regular.eot"); src: url("fonts/Helvetica-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Helvetica-Regular.woff2") format("woff2"), url("fonts/Helvetica-Regular.woff") format("woff"), url("fonts/Helvetica-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: reg; src: url("fonts/HelveticaNeue.eot"); src: url("fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue.woff2") format("woff2"), url("fonts/HelveticaNeue.woff") format("woff"), url("fonts/HelveticaNeue.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: bold; src: url("fonts/helveticaneuecyr-bold-webfont.eot"); src: url("fonts/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-bold-webfont.woff2") format("woff2"), url("fonts/helveticaneuecyr-bold-webfont.woff") format("woff"), url("fonts/helveticaneuecyr-bold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
