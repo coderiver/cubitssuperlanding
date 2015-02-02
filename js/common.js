@@ -1,19 +1,10 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
-
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
-
-	console.log($('body').html());
+	$('.js-goto').click(function(event) {
+		targ = $(this).data('target');
+		$('html, body').animate({
+	        scrollTop: $("#"+targ).offset().top - 30
+	    }, 1000);
+		return false;
+	});
 });
